@@ -48,12 +48,6 @@ Recommended next word: suite
 Backup word: ['store']
 $
 ```
-```diff
-- NOTE: All letters must be unique. 
-- No duplicate letters are allowed. 
-- If the solution has duplicates it may be found in the final step.
-- This fix is a WIP.
-```
 The next step is to enter the recommended guess and rerun the program with the next color results. You will need to include the first guess and its results for the second iteration. In other words, you build the argument with each guess. You can hit the "up" arrow to populate the command line with the previous command. Note the single set of quotes wrapped around the argument:
 ```
 $ python3 wordle.py "table YBBBG suite GBBYG"
