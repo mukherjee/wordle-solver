@@ -9,14 +9,21 @@ fn = "5-letter-words.txt"
 with open(fn) as file:
     words1 = file.readlines()
     words1 = [word.rstrip() for word in words1]
+perm_list = []
 #print(len(words1))
 
 # Iterate through every word and return a new list satisfying green criteria
+def add_to_perm_list(letter):
+    global perm_list
+    if letter not in perm_list:
+        perm_list.append(letter)
+
 def green(words, letter, index):
     new_list = []
     for word in words:
         if word[index] == letter:
             new_list.append(word)
+            add_to_perm_list(letter)
     return(new_list)
 
 def yellow(words, letter, index):
@@ -24,12 +31,14 @@ def yellow(words, letter, index):
     for word in words:
         if (letter in word) and (word[index] != letter):
             new_list.append(word)
+            add_to_perm_list(letter)
     return(new_list)
 
 def black(words, letter, index):
+    global perm_list
     new_list = []
     for word in words:
-        if letter not in word:
+        if (letter not in word) or (letter in perm_list):
             new_list.append(word)
     return(new_list)
 
