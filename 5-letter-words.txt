@@ -1231,6 +1231,7 @@ fives
 fixed
 fixer
 fixes
+fizzy
 fjord
 flack
 flags
