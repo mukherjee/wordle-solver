@@ -1,6 +1,6 @@
 # wordle solver
 Script to solve Wordle puzzle in 6 guesses or fewer
-## https://www.powerlanguage.co.uk/wordle/
+## https://www.nytimes.com/games/wordle/index.html
 
 # How to use the Wordle solver script
 
