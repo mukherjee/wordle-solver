@@ -110,6 +110,7 @@ $
 
 ## Troubleshooting
 -If the program crashes, try to use the backup suggestion. This may occur if the solution has duplicate letters.
+Update: This bug has been fixed.
 ## License
 
 MIT
